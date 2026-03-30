@@ -1,0 +1,28 @@
+body{
+      display: flex;
+      height: 98vh;
+      justify-content: center;
+      align-items: center;
+}
+
+canvas{
+    background: black;
+}
+div{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 64px;
+}
+p{
+    font-size: 32px;
+}
