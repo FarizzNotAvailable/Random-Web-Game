@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    background-color: aqua;
+}
