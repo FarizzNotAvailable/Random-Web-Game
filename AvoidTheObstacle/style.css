@@ -1,0 +1,21 @@
+body{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    background-color: black;
+}
+#gameoverMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    width: 1000px;
+    height: 600px;
+}
