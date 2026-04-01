@@ -56,7 +56,6 @@ function update(){
 
     for(ball of balls.values()){
         if(isCollide(ball, ground)){
-            ball.velocityX = ball.velocityX - 0.1
             ball.velocityY = -ball.velocityY + 0.09
         }
         if(ball.x < -32){
@@ -64,6 +63,30 @@ function update(){
         }
         if(ball.x > 1000){
             ball.x = -32
+        }
+        if(ball.y >=536){
+            ball.y = 536
+
+        }
+        for(otherBall of balls.values()){
+            if(ball === otherBall) continue;
+            if(isCollide(ball, otherBall, 4)){
+                console.log('a');
+                if(ball.x > otherBall.x){
+                    ball.velocityX = 0
+                    ball.velocityX += 0.31
+                }
+                if(ball.x < otherBall.x){
+                    ball.velocityX = 0
+                    ball.velocityX -= 0.31
+                }
+                if(ball.y > otherBall.y){
+                    ball.velocityY += 0.31
+                }
+                if(ball.y < otherBall.y){
+                    ball.velocityY -= 0.31
+                }
+            }
         }
     }
 
