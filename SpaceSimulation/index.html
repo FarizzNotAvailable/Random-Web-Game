@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orbit Simulation</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <canvas id="screen"></canvas>
+      <div id="ui">
+            <h2>Object modifier</h2>
+            <h3>Mass (ton) : </h3>
+            <input type="number" id="mass" onchange="takeValue()" value="0">
+            <h3>Speed (m/s) : </h3>
+            <div>
+                  <div class="speedInput">
+                        <label for="xSpeed">x : </label>
+                        <input type="number" id="xSpeed" onchange="takeValue()" value="0">
+                  </div>
+                  <div class="speedInput">
+                        <label for="ySpeed">y :</label>
+                        <input type="number" id="ySpeed" onchange="takeValue()" value="0">
+                  </div>
+            </div>
+            <h3>Size (px) : </h3>
+            <input type="text" id="size" onchange="takeValue()" value="32">
+            <h3>Color : </h3>
+            <select id="color" onchange="takeValue()" value="4">
+                  <option value="1">red</option>
+                  <option value="2">blue</option>
+                  <option value="3">green</option>
+                  <option value="4" selected>gray</option>
+                  <option value="5">yellow</option>
+                  <option value="6">pink</option>
+                  <option value="7">purple</option>
+            </select>
+            <div id="closeBtn" onclick="toggleSetting()"></div>
+      </div>
+      <div id="settingBtn" onclick="toggleSetting()"></div>
+      <div id="clearBtn" onclick="clearAll()"></div>
+      <script src="main.js"></script>
+</body>
+</html>

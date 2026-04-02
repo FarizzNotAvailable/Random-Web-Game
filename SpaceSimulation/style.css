@@ -1,0 +1,60 @@
+body{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas{
+    z-index: 10;
+}
+#ui{
+    z-index: 20;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 97vh;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    width: 200px;
+    display: none;
+}
+input{
+    width: 100%;
+}
+select{
+    width: 100%;
+}
+.speedInput input{
+    width: fit-content;
+    margin-bottom: 6px;
+}
+#closeBtn{
+    background-image: url(assets/close.png);
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+#settingBtn{
+    background-image: url(assets/gear.png);
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 15;
+}
+#clearBtn{
+    background-image: url(assets/trash.png);
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    z-index: 15;
+}
