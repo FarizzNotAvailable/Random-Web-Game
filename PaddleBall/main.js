@@ -79,7 +79,6 @@ function update(timestamp){
 
     for(let block of blocks.values()){
         if(isCollide(ball, block, 2)){
-            ball.vY = -ball.vY
             if(block.color != 'darkgray'){
                 blocks.delete(block)
             }
@@ -94,13 +93,19 @@ function update(timestamp){
                     ball.vX += 0.1
                 }
             }
+            if(dir.y1Pos == "bawah"){
+                ball.vY = 0.4
+            }
+            if(dir.y1Pos == "atas"){
+                ball.vY = -0.4
+            }
         }
     }
     if(isCollide(ball, paddle, 3)){
         ball.vY = -ball.vY
         let dir = bounceDirection(ball, paddle)
         if(dir.x1Pos == "kiri"){
-            if(ball.vX > 0.2){
+            if(ball.vX > -0.2){
                 ball.vX += -0.1
             }
         }
