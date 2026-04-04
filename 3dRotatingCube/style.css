@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(12, 12, 12);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+canvas{
+    background-color: black;
+}
